@@ -1,1 +1,1 @@
-# a file for store images
+# a folder for store images
