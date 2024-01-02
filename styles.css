@@ -30,6 +30,8 @@
     width: 200px;
     height: auto;
     border-radius: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .text-container {
@@ -37,9 +39,18 @@
 }
 main h {
     font-size: 36px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
-main p {
+main p,h5,h {
     font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+main h5{
+    margin-bottom: 0px;
 }
 
 html, body {
@@ -88,3 +99,5 @@ footer {
 .sclinks p {
     font-size: 20px;
 }
+
+
