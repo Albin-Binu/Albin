@@ -1,9 +1,13 @@
+.navbar-word-highlight {
+    color: #FF3535;
+}
 .navbar-nav .nav-item.active .nav-link {
     color: #5755ff;
+    background: transparent;
 }
 
 .navbar p {
-    font-size: medium;
+    font-size: 19px;
 }
 
 .navbar-dark-mode {
@@ -17,12 +21,13 @@
 
 .container {
     margin-top: 15px;
-    padding: 20px;
+    padding: 2ch;
     text-align: center;
+    justify-content: center;
 }
 
 .container img {
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 50px;
 }
@@ -37,12 +42,51 @@ main p {
     font-size: 18px;
 }
 
-/* Additional Styles for Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #343a40;
     color: white;
     text-align: center;
-    width: 100%;
     height: 25px;
-    bottom: 0;
+    padding: 1px;
 }
+
+.cvbt { 
+    border: 1px solid black;
+    width:130px;
+    border-radius: 20px;
+    color: 3404041; 
+    font-size: 15px;
+}
+.cvbt:hover {
+    background-color: #404041;
+    color: white;
+}
+.cnbt {
+    border: 1px solid black;
+    width: 130px;
+    border-radius: 20px;
+    background-color: #404041;
+    color: white;
+}
+.sclinks a {
+    color: black;
+}
+.sclinks p {
+    font-size: 20px;
+}
+
+ 
