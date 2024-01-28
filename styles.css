@@ -11,7 +11,7 @@
 }
 
 .navbar-dark-mode {
-    background-color: #343a40 !important;
+    background-color: #1c2025 !important;
     color: #ffffff !important;
 }
 
@@ -27,31 +27,16 @@
 }
 
 .container img {
-    width: 200px;
+    width: 400px;
     height: auto;
     border-radius: 50px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.text-container {
-    margin-top: 20px;
-}
-main h {
-    font-size: 36px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-main p,h5,h {
-    font-size: 18px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 1px;
-    margin-bottom: 10px;
-}
-main h5{
-    margin-bottom: 0px;
-}
+
+
+
 
 html, body {
     height: 100%;
@@ -75,29 +60,14 @@ footer {
     padding: 1px;
 }
 
-.cvbt { 
-    border: 1px solid black;
-    width:130px;
-    border-radius: 20px;
-    color: 3404041; 
-    font-size: 15px;
-}
-.cvbt:hover {
-    background-color: #404041;
-    color: white;
-}
-.cnbt {
-    border: 1px solid black;
-    width: 130px;
-    border-radius: 20px;
-    background-color: #404041;
-    color: white;
-}
 .sclinks a {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .sclinks p {
     font-size: 20px;
+}
+.buttn-cl {
+    color: black;
 }
 
 
