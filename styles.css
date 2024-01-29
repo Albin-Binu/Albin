@@ -1,6 +1,4 @@
-.navbar-word-highlight {
-    color: #FF3535;
-}
+
 .navbar-nav .nav-item.active .nav-link {
     color: #5755ff;
     background: transparent;
@@ -69,5 +67,23 @@ footer {
 .buttn-cl {
     color: black;
 }
+.custom-container {
+    background-color: #f4a4f6; /* Red background color */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* White text color */
+  }
 
+.form-group {
+    margin-bottom: 20px;
+}
 
+.social-icons {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.social-icons {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff; /* White color for social icons */
+}
