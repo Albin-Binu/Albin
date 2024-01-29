@@ -12,7 +12,12 @@
     background-color: #1c2025 !important;
     color: #ffffff !important;
 }
-
+.navbar-text {
+    font-size: 15px;
+}
+.navbar-text:hover{
+    color: black;
+}
 #darkModeToggle {
     cursor: pointer;
 }
@@ -31,10 +36,6 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
-
-
-
-
 
 html, body {
     height: 100%;
@@ -68,11 +69,11 @@ footer {
     color: black;
 }
 .custom-container {
-    background-color: #f4a4f6; /* Red background color */
+    background-color: #f4a4f6; 
     padding: 20px;
     border-radius: 10px;
-    color: #fff; /* White text color */
-  }
+    color: #fff; 
+}
 
 .form-group {
     margin-bottom: 20px;
@@ -81,9 +82,9 @@ footer {
 .social-icons {
     font-size: 24px;
     margin-right: 10px;
+    color: #fff; 
 }
-.social-icons {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #fff; /* White color for social icons */
+.sc-links a{
+    margin-left: 10px;
+    
 }
