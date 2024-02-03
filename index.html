@@ -2,139 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Albin Binu | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Albin Binu | Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <p><span style="color: red; font-size: 25px;">Albin</span> Binu</p>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <p><span style="color: red; font-size: 25px;">Albin</span> Binu</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <span id="darkModeToggle" class="navbar-text ml-2 nav-link"> <a> <i class="bi bi-moon-stars"></i> </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/pfp.png" alt="Sample Image" class="img-fluid">
+        </div>
+        <div class="col-md-5 mt-5">
+          <h1 class="h1">Hello</h1>
+          <h4 class="h4">i'm Albin Binu</h4>
+          <p class="p3">I'm a first-year Computer Science Student, Who Interested in Web Designing.</p>
+          <button class="btn btn-primary" style="width: 130px;"
+            onclick="location.href='mailto:albinbinuk17@gmail.com';"><span class="buttn-cl">Let's</span> Talk</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="h1" style="font-family: 'Roboto', sans-serif;" id="about">About Me</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p1 class="p1">
+            My name is <span style="color: red;">Albin Binu</span>, and I'm a first-year computer science student at the
+            College of Applied Science, Thiruvambadi. I love programming, but understanding the logic behind it is
+            challenging for me. I dislike mathematics; consequently, grasping math-based logic is not my forte. Despite
+            this, I am currently focusing on web development and object-oriented languages to enhance my skills.
+          </p1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <button type="button" class="btn btn-info disabled"><span style="color: white;">Download
+            </span>Resume</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container custom-container mt-5 mb-5" id="">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="color: black; font-family: 'Roboto', sans-serif;" id="contact-me">Contact Form</h2>
+          <form>
+            <div class="form-group">
+              <label for="Name" style="color: rgb(41, 16, 16);">Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email" style="color: rgb(41, 16, 16);">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="subject" style="color: rgb(41, 16, 16);">Subject</label>
+              <textarea class="form-control" rows="4" placeholder="Enter the subject"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-light disabled">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6 mt-5 sc-links">
+          <h2 style="color: black; font-family:'Roboto', sans-serif;">Social Media</h2>
+          <div>
+            <a href="https://www.instagram.com/albin.binu_/" target="_blank" class="social-icons">
+              <i class="bi bi-instagram"></i>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-                <span id="darkModeToggle" class="navbar-text ml-2"> <a> <i class="bi bi-moon-stars"></i> </a> </span>
-              </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/pfp.png" alt="Sample Image" class="img-fluid">
-                </div>
-                <div class="col-md-5 mt-5">
-                    <h1 class="h1">Hello</h1>
-                    <h4 class="h4">i'm Albin Binu</h4>
-                    <p class="p3">I'm a first-year Computer Science Student, Who Interested in Web Designing.</p>
-                    <button class="btn btn-primary" style="width: 130px;" onclick="location.href='mailto:albinbinuk17@gmail.com';"><span class="buttn-cl">Let's</span> Talk</button>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="h1" style="font-family: 'Roboto', sans-serif;" id="about">About Me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p1 class="p1">
-                        My name is <span style="color: red;">Albin Binu</span>, and I'm a first-year computer science student at the College of Applied Science, Thiruvambadi. I love programming, but understanding the logic behind it is challenging for me. I dislike mathematics; consequently, grasping math-based logic is not my forte. Despite this, I am currently focusing on web development and object-oriented languages to enhance my skills.
-                    </p1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mt-3">
-                    <button type="button" class="btn btn-info"><span style="color: white;">Download </span>Resume</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container custom-container mt-5 mb-5" id="">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 style="color: black; font-family: 'Roboto', sans-serif;" id="contact-me">Contact Form</h2>
-                <form>
-                  <div class="form-group">
-                    <label for="firstName" style="color: rgb(41, 16, 16);">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
-                  </div>
-                  <div class="form-group">
-                    <label for="lastName" style="color: rgb(41, 16, 16);">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email" style="color: rgb(41, 16, 16);">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                  </div>
-                  <div class="form-group">
-                    <label for="subject" style="color: rgb(41, 16, 16);">Subject</label>
-                    <textarea class="form-control" rows="4" placeholder="Enter the subject"></textarea>
-                  </div>
-          
-                  <button type="submit" class="btn btn-light disabled">Submit</button>
-                </form>
-              </div>
-              <div class="col-md-6 mt-5 sc-links">
-                <h2 style="color: black; font-family:'Roboto', sans-serif;">Social Media</h2>
-                <div>
-                  <a href="https://www.instagram.com/albin.binu_/" target="_blank" class="social-icons">
-                    <i class="bi bi-instagram"></i>
-                  </a>
-                  <a href="https://t.me/albin_binu" target="_blank" class="social-icons">
-                    <i class="bi bi-telegram"></i>
-                  </a>
-                  <a href="https://github.com/albin-binu" target="_blank" class="social-icons">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="mailto:albinbinuk17@gmail.com" class="social-icons">
-                    <i class="bi bi-envelope"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <a href="https://t.me/albin_binu" target="_blank" class="social-icons">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="https://github.com/albin-binu" target="_blank" class="social-icons">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:albinbinuk17@gmail.com" class="social-icons">
+              <i class="bi bi-envelope"></i>
+            </a>
           </div>
-        </div>  
-    </main>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
 
-    
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Albin Binu. All rights reserved.</p>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Albin Binu. All rights reserved.</p>
+  </footer>
 
-    <script>
-        // Dark mode toggle function for the entire page
-        document.getElementById('darkModeToggle').addEventListener('click', function () {
-            document.body.classList.toggle('navbar-dark-mode');
-        });
-    </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    darkModeToggle.addEventListener('click', function () {
+      document.body.classList.toggle('navbar-dark-mode');
+
+      const isDarkMode = document.body.classList.contains('navbar-dark-mode');
+      darkModeToggle.innerHTML = isDarkMode ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
+    });
+  </script>
+
 </body>
+
 </html>
