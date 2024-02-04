@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <p><span style="color: red; font-size: 25px;">Albin</span> Binu</p>
+        <p><span style="color: red;"> <span style="font-size: 25px;">A</span>lbin</span> Binu</p>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 mt-3">
-          <button type="button" class="btn btn-info disabled"><span style="color: white;">Download
+          <button type="button" class="btn btn-info" id="cv-button"><span style="color: white;">Download
             </span>Resume</button>
         </div>
       </div>
@@ -99,7 +99,7 @@
               <textarea class="form-control" rows="4" placeholder="Enter the subject"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-light disabled">Submit</button>
+            <button type="submit" class="btn btn-light" id="fsubmit">Submit</button>
           </form>
         </div>
         <div class="col-md-6 mt-5 sc-links">
@@ -135,15 +135,27 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <script>
-
+    // darkmode
     const darkModeToggle = document.getElementById('darkModeToggle');
-
     darkModeToggle.addEventListener('click', function () {
       document.body.classList.toggle('navbar-dark-mode');
 
       const isDarkMode = document.body.classList.contains('navbar-dark-mode');
       darkModeToggle.innerHTML = isDarkMode ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
     });
+
+    // button alert
+    function cvAlert(){
+      alert("Cv is unavaliable right now.");
+    }
+    var cvbutton = document.getElementById("cv-button");
+    cvbutton.addEventListener("click", cvAlert);
+
+    function contacttemp (){
+      alert("This feathure is unavlible right now.")
+    }
+    var cnctbtn = document.getElementById("fsubmit")
+    cnctbtn.addEventListener("click",contacttemp);
   </script>
 
 </body>
