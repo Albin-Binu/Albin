@@ -76,7 +76,7 @@ footer {
 }
 
 .custom-container {
-    background-color: #f4a4f6;
+    background-color: #f3d0d0;
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -96,3 +96,27 @@ footer {
     margin-left: 10px;
 
 }
+.s-one {
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+.s-two {
+    color: rgb(48, 48, 48);
+    background-color: white;
+}
+.dark-bg-one {
+    background-color: white !important;
+  }
+  
+  .dark-text-one {
+    color: rgb(48, 48, 48) !important;
+  }
+  
+  .dark-bg-two {
+    background-color:rgb(48, 48, 48) !important;
+    color: white;
+  }
+  
+  .dark-text-two {
+    color: white !important;
+  }
