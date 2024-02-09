@@ -42,7 +42,8 @@
       </div>
     </nav>
   </header>
-  <main>
+
+  <section class="s-one">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -57,6 +58,9 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="s-two">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -83,7 +87,7 @@
 
     <div class="container custom-container mt-5 mb-5" id="">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col">
           <h2 style="color: black; font-family: 'Roboto', sans-serif;" id="contact-me">Contact Form</h2>
           <form>
             <div class="form-group">
@@ -98,32 +102,31 @@
               <label for="subject" style="color: rgb(41, 16, 16);">Subject</label>
               <textarea class="form-control" rows="4" placeholder="Enter the subject"></textarea>
             </div>
-
             <button type="submit" class="btn btn-light" id="fsubmit">Submit</button>
           </form>
-        </div>
-        <div class="col-md-6 mt-5 sc-links">
-          <h2 style="color: black; font-family:'Roboto', sans-serif;">Social Media</h2>
-          <div>
-            <a href="https://www.instagram.com/albin.binu_/" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://t.me/albin_binu" target="_blank" class="social-icons">
-              <i class="bi bi-telegram"></i>
-            </a>
-            <a href="https://github.com/albin-binu" target="_blank" class="social-icons">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="mailto:albinbinuk17@gmail.com" class="social-icons">
-              <i class="bi bi-envelope"></i>
-            </a>
+          <div class="col mt-5 sc-links">
+            <h2 style="color: black; font-family:'Roboto', sans-serif;">Social Media</h2>
+            <div>
+              <a href="https://www.instagram.com/albin.binu_/" target="_blank" class="social-icons">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://t.me/albin_binu" target="_blank" class="social-icons">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="https://github.com/albin-binu" target="_blank" class="social-icons">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:albinbinuk17@gmail.com" class="social-icons">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     </div>
-  </main>
-
+    </div>
+  </section>
 
   <!-- Footer Section -->
   <footer>
@@ -142,22 +145,37 @@
 
       const isDarkMode = document.body.classList.contains('navbar-dark-mode');
       darkModeToggle.innerHTML = isDarkMode ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
+
+      // Toggle colors for section one
+      const sectionOne = document.querySelector('.s-one');
+      const sectionOneTexts = sectionOne.querySelectorAll('h1, h4, p');
+      sectionOne.classList.toggle('dark-bg-one');
+      sectionOneTexts.forEach(element => {
+        element.classList.toggle('dark-text-one');
+      });
+
+      // Toggle colors for section two
+      const sectionTwo = document.querySelector('.s-two');
+      const sectionTwoTexts = sectionTwo.querySelectorAll('h1, p');
+      sectionTwo.classList.toggle('dark-bg-two');
+      sectionTwoTexts.forEach(element => {
+        element.classList.toggle('dark-text-two');
+      });
     });
 
     // button alert
-    function cvAlert(){
-      alert("Cv is unavaliable right now.");
+    function cvAlert() {
+      alert("Cv is unavailable right now.");
     }
     var cvbutton = document.getElementById("cv-button");
     cvbutton.addEventListener("click", cvAlert);
 
-    function contacttemp (){
-      alert("This feathure is unavlible right now.")
+    function contacttemp() {
+      alert("This feature is unavailable right now.")
     }
     var cnctbtn = document.getElementById("fsubmit")
-    cnctbtn.addEventListener("click",contacttemp);
+    cnctbtn.addEventListener("click", contacttemp);
   </script>
-
 </body>
 
 </html>
