@@ -33,7 +33,7 @@
 }
 
 .container img {
-    width: 400px;
+    width: 250px;
     height: auto;
     border-radius: 50px;
     padding-top: 0px;
@@ -75,13 +75,6 @@ footer {
     color: black;
 }
 
-.custom-container {
-    background-color: #f3d0d0;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-}
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -117,6 +110,10 @@ footer {
     color: white;
   }
   
-  .dark-text-two {
+.dark-text-two {
     color: white !important;
-  }
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
