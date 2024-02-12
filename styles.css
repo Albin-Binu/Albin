@@ -49,45 +49,17 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {
     flex: 1;
 }
-
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    height: 25px;
-    padding: 1px;
+.one {
+    color: red;
 }
-
-.sclinks a {
-    color: rgb(0, 0, 0);
-}
-
-.sclinks p {
-    font-size: 20px;
-}
-
-.buttn-cl {
-    color: black;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.social-icons {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #fff;
-}
-
-.sc-links a {
-    margin-left: 10px;
-
+.two {
+    color: red;
 }
 .s-one {
     color: white;
@@ -112,8 +84,4 @@ footer {
   
 .dark-text-two {
     color: white !important;
-}
-footer a {
-    text-decoration: none;
-    color: #fff;
 }
