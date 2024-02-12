@@ -4,114 +4,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!--bs icon-->
+
   <title>Albin Binu | Portfolio</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <p>
-          <span style="color: red">
-            <span style="font-size: 25px">A</span>lbin</span>
-          Binu
-        </p>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Contact Me</a>
-          </li>
-          <li class="nav-item">
-            <span id="darkModeToggle" class="navbar-text ml-2 nav-link">
-              <a> <i class="bi bi-moon-stars"></i> </a>
-            </span>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div class="container-fluid" style="background-color: rgb(120, 177, 255)">
+    <div class="row">
+      <div class="col">
+        <!-- Dark Mode Toggle -->
+        <div class="d-flex justify-content-end">
+          <span id="darkModeToggle" class="navbar-text ml-2 nav-link">
+            <a> <i class="bi bi-moon-stars"></i> </a>
+          </span>
+        </div>
 
-  <section class="s-one">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/pfp.png" alt="Sample Image" class="img-fluid" />
-        </div>
-        <div class="col-md-5 mt-5">
-          <h1 class="h1">Hello</h1>
-          <h4 class="h4">i'm Albin Binu</h4>
-          <p class="p3">
-            I'm a first-year Computer Science Student, Who Interested in Web
-            Designing.
-          </p>
-          <button class="btn btn-primary" style="width: 130px" onclick="location.href='mailto:albinbinuk17@gmail.com';">
-            <span class="buttn-cl">Let's</span> Talk
-          </button>
-        </div>
+        <!-- Header Section -->
+        <header>
+          <nav class="navbar navbar-expand-md navbar-light bg-light mb-0">
+            <a class="navbar-brand" href="#">
+              <p>
+                <span class="one"><</span>Albin Binu <span class="two">/></span>
+              </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-me">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+          <section class="s-one">
+            <div class="container mt-0 mb-0">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/pfp.png" alt="Sample Image" class="img-fluid" />
+                </div>
+                <div class="col-md-5 mt-5">
+                  <h1 class="h1">Hello</h1>
+                  <h4 class="h4">i'm Albin Binu</h4>
+                  <p class="p3">
+                    I'm a first-year Computer Science Student, Who Interested
+                    in Web Designing.
+                  </p>
+                  <button class="btn btn-primary" style="width: 130px"
+                    onclick="location.href='mailto:albinbinuk17@gmail.com';">
+                    <span class="buttn-cl">Let's</span> Talk
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s-two">
+            <div class="container mt-0">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h1 class="display-4 mb-4">About Me</h1>
+                  <p class="lead">
+                    My name is <span style="color: red">Albin Binu</span>, and
+                    I'm a first-year computer science student at the College
+                    of Applied Science, Thiruvambadi. I love programming, but
+                    understanding the logic behind it is challenging for me. I
+                    dislike mathematics; consequently, grasping math-based
+                    logic is not my forte. Despite this, I am currently
+                    focusing on web development and object-oriented languages
+                    to enhance my skills.
+                  </p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                  <button type="button" class="btn btn-info btn-lg" onclick="cvAlert()">
+                    Download Resume
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-light py-4">
+          <div class="container">
+            <div class="row" style="height: 35px">
+              <div class="col-md-3">
+                <p>&copy; <span id="currentYear"></span> Albin Binu</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Enter your email address" />
+                  <div class="input-group-append">
+                    <button class="btn btn-danger" type="button">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 text-center">
+                <h5>Follow Me:</h5>
+                <a href="#" class="text-light social-icon" style="text-decoration: none"><i
+                    class="fab fa-instagram fa-2x mr-3"></i> Instagram</a>
+                <a href="#" class="text-light social-icon" style="text-decoration: none"><i
+                    class="fab fa-github fa-2x mr-3"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="s-two">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="h1" style="font-family: 'Roboto', sans-serif" id="about">
-            About Me
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p1 class="p1">
-            My name is <span style="color: red">Albin Binu</span>, and I'm a
-            first-year computer science student at the College of Applied
-            Science, Thiruvambadi. I love programming, but understanding the
-            logic behind it is challenging for me. I dislike mathematics;
-            consequently, grasping math-based logic is not my forte. Despite
-            this, I am currently focusing on web development and
-            object-oriented languages to enhance my skills.
-          </p1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <button type="button" class="btn btn-info" id="cv-button">
-            <span style="color: white">Download </span>Resume
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <a href="https://github.com/albin-binu"> 
-    <p>&copy; 2024 Albin Binu. All rights reserved.</p>
-    </a>
-  </footer>
-
+  <!-- External JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <!-- Custom JavaScript -->
   <script>
     // darkmode
     const darkModeToggle = document.getElementById("darkModeToggle");
@@ -146,12 +178,9 @@
     }
     var cvbutton = document.getElementById("cv-button");
     cvbutton.addEventListener("click", cvAlert);
-
-    function contacttemp() {
-      alert("This feature is unavailable right now.");
-    }
-    var cnctbtn = document.getElementById("fsubmit");
-    cnctbtn.addEventListener("click", contacttemp);
+    // year
+    document.getElementById("currentYear").innerHTML =
+      new Date().getFullYear();
   </script>
 </body>
 
