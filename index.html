@@ -28,13 +28,11 @@
         </div>
 
         <!-- Header Section -->
-
         <header>
           <nav class="navbar navbar-expand-md navbar-light bg-light mb-0">
             <a class="navbar-brand" href="#">
               <p>
-                <span class="one">
-                 <span class="two"><</span>Albin Binu<span class="two">/></span>
+                <span class="one"><</span>Albin Binu <span class="two">/></span>
               </p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -50,7 +48,7 @@
                   <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact-me">Contact Me</a>
+                  <a class="nav-link" href="#skills">Skills</a>
                 </li>
               </ul>
             </div>
@@ -81,11 +79,11 @@
             </div>
           </section>
 
-          <section class="s-two">
-            <div class="container mt-0 mb-0">
+          <section class="s-two" id="about">
+            <div class="container mt-0">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <h5 class="display-4 mb-4">About Me</h5>
+                  <h3 class="display-4 mb-4">About Me</h3>
                   <p class="lead">
                     My name is <span style="color: red">Albin Binu</span>, and
                     I'm a first-year computer science student at the College
@@ -107,16 +105,39 @@
               </div>
             </div>
           </section>
+          <section class="s-two" id="skills">
+            <div class="container-fluid" style="background-color: white">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h4>My Skills</h4>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <i class="fas fa-check-circle text-success mr-2"></i> HTML
+                    </div>
+                    <div class="col-sm-3">
+                      <i class="fas fa-check-circle text-success mr-2"></i> CSS
+                    </div>
+                    <div class="col-sm-3">
+                      <i class="fas fa-check-circle text-success mr-2"></i> Bootstrap
+                    </div>
+                    <div class="col-sm-3">
+                      <i class="fas fa-check-circle text-success mr-2"></i> Python
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </section>
         </main>
 
         <!-- Footer Section -->
-        <footer class="bg-dark text-light mb-4">
-          <div class="container mt-0">
-            <div class="row">
+        <footer class="text-light py-4" style="background-color: rgb(52, 52, 52);">
+          <div class="container">
+            <div class="row" style="height: 35px">
               <div class="col-md-3">
-                <a href="https://github.com/Albin-Binu" style="text-decoration: none; color: white;">
-                  <p>&copy; <span id="currentYear"></span> Albin Binu</p>
-                </a>
+                <a href="https://github.com/albin-binu" style="text-decoration: none; color: white;"> 
+                <p>&copy; <span id="currentYear"></span> Albin Binu</p>
+              </a>
               </div>
               <div class="col-md-4 text-center">
                 <div class="input-group">
@@ -130,9 +151,9 @@
               </div>
               <div class="col-md-5 text-center">
                 <h5>Follow Me:</h5>
-                <a href="#" class="text-light social-icon" style="text-decoration: none"><i
+                <a href="https://www.instagram.com/albin.binu_/" class="text-light social-icon" style="text-decoration: none"><i
                     class="fab fa-instagram fa-2x mr-3"></i> Instagram</a>
-                <a href="#" class="text-light social-icon" style="text-decoration: none"><i
+                <a href="https://github.com/albin-binu" class="text-light social-icon" style="text-decoration: none"><i
                     class="fab fa-github fa-2x mr-3"></i> GitHub</a>
               </div>
             </div>
@@ -140,7 +161,6 @@
         </footer>
       </div>
     </div>
-
   </div>
 
   <!-- External JavaScript Libraries -->
@@ -179,7 +199,7 @@
 
     // button alert
     function cvAlert() {
-      alert("Cv is unavailable right now.");
+      alert("CV is unavailable right now.");
     }
     var cvbutton = document.getElementById("cv-button");
     cvbutton.addEventListener("click", cvAlert);
